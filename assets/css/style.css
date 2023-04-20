@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-image: url("../images/header-bg-mobile.png");
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4.375rem 1.5rem;
+  width: 100%;
+}
+
+.header h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 5px #00000088;
+  text-transform: uppercase;
+  width: 12.5rem;
+}
+
+.header p {
+  line-height: 1.361875rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.button,
+.button-black {
+  height: 3.375rem;
+  border: none;
+  border-radius: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.button a,
+.button-black a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.button a {
+  color: #23272a;
+}
+
+.button-black {
+  background-color: #23272a;
+}
+
+.button-black a {
+  color: #fff;
+}
+
+.section-card {
+  padding: 2.5rem 1.5rem;
+}
+
+.section-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6875rem;
+  line-height: 1.361875rem;
+}
+
+.section-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6875rem;
+}
+
+.section-card-text h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2.0625rem;
+  color: #23272a;
+}
+
+.section-card p {
+  color: #23272a;
+}
+
+.section-card img {
+  width: 100%;
+}
+
+.section-card-gray-bg {
+  background-color: #f6f6f6;
+}
+
+.last-section h3 {
+  font-family: "Luckiest Guy", cursive;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.75rem 8.3125rem 3.1875rem 8.3125rem;
+  background-color: #23272a;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url("../images/header-bg-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header h2 {
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+  }
+
+  .header p {
+    max-width: 757px;
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .button {
+    padding: 0 1.5rem;
+  }
+
+  .button-black {
+    padding: 1rem;
+  }
+
+  .section-card-content {
+    max-width: 970px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-card-content picture {
+    width: 607px;
+  }
+
+  .section-card-text h3 {
+    font-size: 2.5rem;
+    line-height: 3.375rem;
+  }
+
+  .section-card-gray-bg .section-card-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .section-card-gray-bg .section-card-content img {
+    width: 607px;
+  }
+
+  .last-section .section-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    max-width: 802px;
+  }
+
+  .last-section .section-card-content h3 {
+    max-width: 603px;
+    margin: 0 auto;
+  }
+
+  .last-section .section-card-content img {
+    width: 784px;
+  }
+
+  .footer img {
+    width: 230px;
+  }
+}
